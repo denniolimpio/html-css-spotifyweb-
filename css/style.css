@@ -1,0 +1,78 @@
+
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* end reset */
+
+/* regole generali */
+body {
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+/* end regole generali */
+
+ /* layout */
+ .wrap {
+   height: calc(100vh - 110px);
+   overflow: auto;
+ }
+
+ /* left */
+ .sidebar{
+   background-color: #000;
+   float: left;
+   width: 230px;
+ }
+ /* right */
+
+ .content {
+   width: calc(100% - 230px);
+   background-color: #141923;
+ }
+
+ .content .bar-top {
+   position: fixed;
+   top: 0;
+   height: 120px;
+   width: 100%;
+
+   background-color: rgba(0,0,0,.8);
+
+ }
+ footer > .player {
+   min-height: 110px;
+   background-color: #292929;
+ }
+
+
+/* end layout */
+
+/* sidebar */
+
+.sidebar .spoty-logo {
+  height: 120px;
+}
+.spoty-logo img {
+  width: 170px;
+  margin: 40px 60px 20px 20px;
+  vertical-align: middle;
+}
+.nav-sidebar  {
+  width: 40px;
+  margin: 0 60px 20px 20px
+}
+
+
+
+/* da cancellare */
+.box {
+  height: 200px;
+  width: 100%;
+  background-color: pink;
+  border: 1px solid white;
+}
