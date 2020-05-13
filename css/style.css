@@ -64,9 +64,7 @@ li:not(active){
 .ms_active {
   border-left: 2px solid #adff30;
 }
-.ms_active a {
-  color: #fff;
-}
+
 .ms_add-play {
   font-size: 40px;
   vertical-align: middle;
@@ -76,6 +74,12 @@ li:not(active){
 }
 
 /* classi generali */
+/* hover */
+li a:hover, span a:hover {
+  text-decoration: none;
+ color: #fff;
+}
+/* hover */
 
 /* main */
 /* sidebar */
@@ -118,6 +122,9 @@ li:not(active){
 .ms_sidebar-item.ms_bottom-side {
   padding-left: 10px;
 }
+.ms_bottom-side img {
+  margin-right: 5px;
+}
 .ms_bottom-side .ms_install img{
   width: 15px;
 }
@@ -158,7 +165,9 @@ li:not(active){
   font-size: 11px;
   padding: 13px 24px;
 }
-
+.ms_upgrade-flex h3:hover {
+  background-color: green
+}
 /* fine content */
 
 /*end  main */
@@ -187,6 +196,15 @@ li:not(active){
   .ms_top-fixed {
     height: 100px;
   }
+  /* siderbar */
+.ms_logo-xs {
+  padding: 5px 20px;
+
+}
+  .ms_logo-xs img {
+    width: 35px;
+  }
+}
 }
 /* da cancellare */
 .ms_box {
