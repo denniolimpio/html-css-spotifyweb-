@@ -1,78 +1,108 @@
-
-/* reset */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-/* end reset */
+/* fine reset */
 
 /* regole generali */
-body {
+body{
   color: white;
 }
 ul {
   list-style-type: none;
 }
-/* end regole generali */
+/* fine regole generali */
 
- /* layout */
- .wrap {
-   height: calc(100vh - 110px);
-   overflow: auto;
- }
+/* layout macrosezioni */
+.wrapper {
+  height: calc(100vh - 110px);
+}
 
- /* left */
- .sidebar{
-   background-color: #000;
-   float: left;
-   width: 230px;
- }
- /* right */
+.sidebar {
+  float:left;
+  width: 230px;
+  background-color: #000;
+  overflow: hidden;
 
- .content {
-   width: calc(100% - 230px);
-   background-color: #141923;
- }
+}
 
- .content .bar-top {
-   position: fixed;
-   top: 0;
-   height: 120px;
-   width: 100%;
-
-   background-color: rgba(0,0,0,.8);
-
- }
- footer > .player {
-   min-height: 110px;
-   background-color: #292929;
- }
+.content {
+  float: left;
+  width: calc(100% - 230px);
+  background-color: #141923;
 
 
-/* end layout */
+}
 
+/* fine layout */
+
+/* main */
 /* sidebar */
-
-.sidebar .spoty-logo {
-  height: 120px;
+.sidebar >.logo {
+  height: 100px;
 }
-.spoty-logo img {
+.logo img {
   width: 170px;
-  margin: 40px 60px 20px 20px;
-  vertical-align: middle;
+  margin: 10px 20px;
 }
-.nav-sidebar  {
+.sidebar >.navigation-left {
+  height: 200px;
+
+}
+.navigation-left li{
+  padding-left: 10px
+}
+.navigation-left li a{
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+
+
+}
+.navigation-left li.active {
+  border-left: 4px solid green;
+}
+.navigation-left img {
   width: 40px;
-  margin: 0 60px 20px 20px
+  vertical-align: middle;
+  margin: 5px 10px;
+
 }
+.sidebar >.playlist {
+  height: calc(100vh - 510px);
+  overflow-y: auto;
+}
+.sidebar >.profile {
+  height: 100px;
+  overflow: hidden;
+}
+/* fine sidebar */
+
+/* content */
+.content >.top-bar {
+  height: 100px;
+  background-color: #080b12;
+  opacity: .5;
+}
+.content >.homepage {
+  height: calc(100vh - 210px);
+  overflow-y: auto;
+}
+/* fine content */
+/*end  main */
 
 
+/* footer */
+.player-bottom {
+  height: 100px;
+  background-color: red;
+  }
+/* end footer */
 
 /* da cancellare */
 .box {
-  height: 200px;
   width: 100%;
-  background-color: pink;
+  height: 300px;
+  background-color: #141923;
   border: 1px solid white;
 }
