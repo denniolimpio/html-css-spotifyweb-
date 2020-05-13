@@ -39,6 +39,9 @@ ul {
   width: calc(100% - 230px);
   height: 100%;
   background-color: #141923;
+  padding-top: 100px;
+  overflow: hidden;
+  overflow: scroll;
 
 
 }
@@ -89,15 +92,17 @@ ul {
 /* fine sidebar */
 
 /* content */
-.content >.top-bar {
+.top-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 230px);
   height: 100px;
-  background-color: #080b12;
-  opacity: .5;
+  background-color: rgba(0,0,0,.4);
+  border: 2px solid white;
+  color: white;
 }
-.content >.homepage {
-  height: calc(100vh - 210px);
-  overflow-y: auto;
-}
+
 /* fine content */
 /*end  main */
 
