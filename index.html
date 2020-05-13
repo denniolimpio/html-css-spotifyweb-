@@ -8,6 +8,7 @@
 
   <!--  link css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -32,7 +33,7 @@
               <!-- search -->
               <li>
                 <img src="img/search.svg" alt="search">
-                <a href="#"><span>Search</span> </a>
+                <a href="#"><span>Cerca</span> </a>
               </li>
               <!-- libreria -->
               <li>
@@ -46,9 +47,8 @@
           <!-- inizio playlist -->
           <div class="ms_sidebar-item ms_playlist-container">
             <h2>Playlist</h2>
-              <i class="far fa-plus-square"></i>
-              <span> <a href="#"> Crea playlist</a> </span>
-
+              <i class="far fa-plus-square ms_add-play"></i>
+                <span> <a href="#"> Crea playlist</a> </span>
             <div class="ms_playlist">
               <ul>
                 <li><a href="#">Nome playlist</a></li>
@@ -61,8 +61,23 @@
               </ul>
             </div>
           </div>
-          <div class="ms_sidebar-item">
-              <a href="#">Installa app</a>
+          <div class="ms_sidebar-item ms_bottom-side">
+            <div class="ms_sidebar-item ms_install">
+              <span>
+                <img src="img/download.svg" alt="download">
+                <a href="#">Installa app</a>
+              </span>
+
+            </div>
+              <hr>
+            <div class="ms_account">
+              <span>
+                <img src="img/profile.svg" alt="profile">
+                <a href="#">John Doe</a>
+              </span>
+            </div>
+
+
 
 
           </div>
@@ -71,36 +86,30 @@
         <!-- sidebar xs -->
         <div class="ms_sidebar-xs visible-xs-block">
           <!-- logo -->
-
           <div class="ms_menu-xs">
             <ul>
-              <li>
-                <img src="img/logo-small.svg" alt="logo small">
-              </li>
-              <li>
-                <img src="img/home.svg" alt="home">
-              </li>
+              <!-- logo -->
+              <li><img src="img/logo-small.svg" alt="logo small"></li>
+              <!-- home -->
+              <li> <img src="img/home.svg" alt="home"></li>
               <!-- search -->
-              <li>
-                <img src="img/search.svg" alt="search">
-              </li>
+              <li><img src="img/search.svg" alt="search"></li>
               <!-- libreria -->
-              <li>
-                <img src="img/libreria.svg" alt="libreria">
-              </li>
+              <li><img src="img/libreria.svg" alt="libreria"> </li>
             </ul>
-
           </div>
-
+        <!-- fine menu-xs -->
         </div>
-
       </div>
       <!-- fine sidebar -->
 
       <!-- right -->
       <div class="ms_content">
-        <div class="ms_top-bar">
-          upgrade
+        <div class="ms_top-fixed">
+          <div class="ms_upgrade-flex">
+            <h3>EFFETTUA L'UPGRADE</h3>
+
+          </div>
         </div>
         <div class="ms_box"></div>
         <div class="ms_box"></div>
@@ -116,12 +125,8 @@
     </main>
 
     <footer>
-      <div class="ms_player-bottom">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="ms_player-bottom text-center">
+        PLAYER
 
       </div>
 
