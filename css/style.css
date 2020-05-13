@@ -7,6 +7,7 @@
 
 /* regole generali */
 body{
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 main {
@@ -16,25 +17,29 @@ main {
 ul {
   list-style-type: none;
 }
-
+h2 {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+span{
+  padding-left: 10px;
+}
+p:hover, h1:hover, a:hover {
+  color: red;
+}
 /* fine regole generali */
-
-
 /* layout macrosezioni */
 .ms_wrapper {
   height: 100vh;
 }
-
-
 .ms_sidebar {
   float:left;
   width: 230px;
   height: 100%;
   background-color: #000;
-  overflow: hidden;
 
 }
-
 .ms_content {
   float: left;
   width: calc(100% - 230px);
@@ -45,24 +50,31 @@ ul {
   overflow: hidden;
   overflow: scroll;
 }
-
 /* fine layout */
-
 
 /* classi generali */
 .ms_sidebar-item a{
   color: rgba(255, 255, 255, 0.5);
   font-weight: 500;
 }
-
-
 li:not(active){
   padding-left: 20px;
   padding-top:10px;
 }
 .ms_active {
-  border-left: 4px solid green;
+  border-left: 2px solid #adff30;
 }
+.ms_active a {
+  color: #fff;
+}
+.ms_add-play {
+  font-size: 40px;
+  vertical-align: middle;
+}
+.ms_sidebar, .ms_playlist-container, .ms_navigation-left {
+  overflow: hidden;
+}
+
 /* classi generali */
 
 /* main */
@@ -72,16 +84,11 @@ li:not(active){
 }
 .ms_logo img {
   width: 170px;
-  padding: 15px 10px 30px 5px;
+  padding: 30px 5px 25px 20px;
   /* margin: 10px 20px; */
 }
 .ms_sidebar >.ms_navigation-left {
   height: 120px;
-  overflow: hidden;
-
-}
-.ms_navigation-left li{
-  /* padding-left: 10px */
 }
 
 .ms_navigation-left img {
@@ -91,22 +98,42 @@ li:not(active){
 
 }
 .ms_playlist-container {
-  height: calc(100vh - 430px);
-  overflow: hidden;
+  height: calc(100vh - 410px);
 }
-.ms_playlist-container >h2, i {
+.ms_sidebar-item.ms_playlist-container  >h2, i {
   padding-left: 20px;
+}
+.ms_sidebar-item.ms_playlist-container span a{
+  padding-left: 5px;
+  font-size: 16px;
 }
 .ms_playlist {
   height: 60%;
   overflow-y: auto;
-
 }
-
+.ms_sidebar-item hr {
+  text-align: center;
+  margin: 8px 10px;
+}
+.ms_sidebar-item.ms_bottom-side {
+  padding-left: 10px;
+}
+.ms_bottom-side .ms_install img{
+  width: 15px;
+}
+.ms_bottom-side .ms_account img {
+  width: 25px;
+  border-radius: 50%;
+  background-color: grey;
+}
+.ms_bottom-side .ms_account a{
+  color: #fff;
+  font-weight: bold;
+}
 /* fine sidebar */
 
 /* content */
-.ms_top-bar {
+.ms_top-fixed {
   position: fixed;
   top: 0;
   right: 0;
@@ -116,13 +143,29 @@ li:not(active){
   color: white;
 }
 
+.ms_upgrade-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  padding-right: 5px;
+
+}
+.ms_upgrade-flex h3 {
+  border: 1px solid white;
+  border-radius: 19px;
+  font-size: 11px;
+  padding: 13px 24px;
+}
+
 /* fine content */
 
 /*end  main */
 /* footer */
 .ms_player-bottom {
   min-height: 110px;
-  background-color: red;
+  background-color: #292929;
   }
 /* end footer */
 
@@ -131,31 +174,29 @@ li:not(active){
 /* formato xs */
 @media all and (max-width:767px) {
   .ms_sidebar {
-    width: 80px;
+    width: 100px;
     height: 100%;
   }
     /* layout */
-  .ms_content, .ms_top-bar {
-    width: calc(100% - 80px);
+  .ms_content, .ms_top-fixed {
+    width: calc(100% - 100px);
   }
   .ms_menu-xs {
     width: 50px;
   }
-  .ms_top-bar {
+  .ms_top-fixed {
     height: 100px;
   }
 }
-
-
-
-
-
-
-
 /* da cancellare */
 .ms_box {
   height: 300px;
   background-color: #141923;
   border: 1px solid white;
+}
+.box1 {
+  height: 40px;
+  width: 40px;
+  background-color: red
 }
 /* da cancellare */
