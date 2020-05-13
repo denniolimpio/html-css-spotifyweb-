@@ -19,6 +19,7 @@ ul {
 
 /* fine regole generali */
 
+
 /* layout macrosezioni */
 .wrapper {
   height: 100vh;
@@ -42,11 +43,28 @@ ul {
   padding-top: 100px;
   overflow: hidden;
   overflow: scroll;
-
-
 }
 
 /* fine layout */
+
+
+/* classi generali */
+.sidebar-item a{
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+
+
+li:not(active){
+  padding-left: 20px;
+  padding-top:10px;
+}
+.active {
+  border-left: 4px solid green;
+}
+/* classi generali */
+
+
 
 /* main */
 /* sidebar */
@@ -55,34 +73,35 @@ ul {
 }
 .logo img {
   width: 170px;
-  margin: 10px 20px;
+  padding: 15px 10px 30px 5px;
+  /* margin: 10px 20px; */
 }
 .sidebar >.navigation-left {
-  height: 200px;
+  height: 120px;
   overflow: hidden;
 
 }
 .navigation-left li{
-  padding-left: 10px
+  /* padding-left: 10px */
 }
-.navigation-left li a{
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 500;
 
-
-}
-.navigation-left li.active {
-  border-left: 4px solid green;
-}
 .navigation-left img {
-  width: 40px;
+  width: 30px;
   vertical-align: middle;
-  margin: 5px 10px;
+  /* margin: 5px 10px; */
 
 }
-.sidebar >.playlist {
-  height: calc(100vh - 510px);
+.playlist-container {
+  height: calc(100vh - 430px);
+  overflow: hidden;
+}
+.playlist-container >h2, i {
+  padding-left: 20px;
+}
+.playlist {
+  height: 60%;
   overflow-y: auto;
+
 }
 .sidebar >.profile {
   height: 100px;
