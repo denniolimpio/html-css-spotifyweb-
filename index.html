@@ -8,135 +8,121 @@
 
   <!--  link css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
-    <!-- inizio wrapper -->
-    <div class="ms_wrapper">
-      <main>
-      <!-- left -->
-      <div class="ms_sidebar">
-        <div class="hidden-xs">
-          <div class="ms_logo">
-            <img src="img/logo.svg" alt="logo">
-          </div>
-          <!-- barra di navigazione -->
-          <nav class="ms_navigation-left ms_sidebar-item">
+<!-- inizio wrapper -->
+<div class="ms_wrapper">
+  <!-- end main -->
+  <main>
+    <!-- sidebar superiore -->
+    <div class="ms_sidebar">
+      <div class="hidden-xs">
+        <div class="ms_logo">
+          <img src="img/logo.svg" alt="logo">
+        </div>
+        <!-- barra di navigazione -->
+        <nav class="ms_navigation-left ms_sidebar-item">
+          <ul>
+            <!-- home -->
+            <li class="ms_active">
+              <img src="img/home.svg" alt="home">
+              <span><a href="#"> Home</a></span>
+            </li>
+            <!-- search -->
+            <li>
+              <img src="img/search.svg" alt="search">
+              <span><a href="#"> Cerca</a></span>
+            </li>
+            <!-- libreria -->
+            <li>
+              <img src="img/libreria.svg" alt="libreria">
+              <span><a href="#"> La tua libreria</a></span>
+            </li>
+          </ul>
+        </nav>
+        <!-- fine barra di navigazione -->
+
+        <!-- inizio playlist -->
+        <div class="ms_sidebar-item ms_playlist-container">
+          <h2>Playlist</h2>
+          <i class="far fa-plus-square ms_add-play"></i>
+          <span> <a href="#"> Crea playlist</a> </span>
+          <div class="ms_playlist">
             <ul>
-              <!-- home -->
-              <li class="ms_active">
-                <img src="img/home.svg" alt="home">
-                <a href="#"><span>Home</span> </a>
-              </li>
-              <!-- search -->
-              <li>
-                <img src="img/search.svg" alt="search">
-                <a href="#"><span>Cerca</span> </a>
-              </li>
-              <!-- libreria -->
-              <li>
-                <img src="img/libreria.svg" alt="libreria">
-                <a href="#"><span>La tua libreria</span> </a>
-              </li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
             </ul>
-          </nav>
-          <!-- fine barra di navigazione -->
-
-          <!-- inizio playlist -->
-          <div class="ms_sidebar-item ms_playlist-container">
-            <h2>Playlist</h2>
-              <i class="far fa-plus-square ms_add-play"></i>
-                <span> <a href="#"> Crea playlist</a> </span>
-            <div class="ms_playlist">
-              <ul>
-                <li><a href="#">Nome playlist</a></li>
-                <li><a href="#">Nome playlist</a></li>
-                <li><a href="#">Nome playlist</a></li>
-                <li><a href="#">Nome playlist</a></li>
-                <li><a href="#">Nome playlist</a></li>
-                <li><a href="#">Nome playlist</a></li>
-                <li><a href="#">Nome playlist</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="ms_sidebar-item ms_bottom-side">
-            <div class="ms_sidebar-item ms_install">
-              <span>
-                <img src="img/download.svg" alt="download">
-                <a href="#">Installa app</a>
-              </span>
-
-            </div>
-              <hr>
-            <div class="ms_account">
-              <span>
-                <img src="img/profile.svg" alt="profile">
-                <a href="#">John Doe</a>
-              </span>
-            </div>
-
-
-
-
           </div>
         </div>
+        <!-- sidebar inferiore  -->
+        <div class="ms_sidebar-item ms_bottom-side">
+          <div class="ms_sidebar-item ms_install">
+            <span>
+              <img src="img/download.svg" alt="download">
+              <a href="#">Installa app</a>
+            </span>
 
-        <!-- sidebar xs -->
-        <div class="ms_sidebar-xs visible-xs-block">
-          <!-- logo -->
-          <div class="ms_menu-xs">
-            <ul>
-              <!-- logo -->
-              <li><img src="img/logo-small.svg" alt="logo small"></li>
-              <!-- home -->
-              <li> <img src="img/home.svg" alt="home"></li>
-              <!-- search -->
-              <li><img src="img/search.svg" alt="search"></li>
-              <!-- libreria -->
-              <li><img src="img/libreria.svg" alt="libreria"> </li>
-            </ul>
           </div>
+          <hr>
+          <div class="ms_account">
+            <span>
+              <img src="img/profile.svg" alt="profile">
+              <a href="#">John Doe</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar xs -->
+      <div class="ms_sidebar-xs visible-xs-block">
+        <!-- logo -->
+        <div class="ms_menu-xs">
+          <div class="ms_logo-xs">
+            <!-- logo -->
+            <img src="img/logo-small.svg" alt="logo small">
+          </div>
+          <ul>
+            <!-- home -->
+            <li> <img src="img/home.svg" alt="home"></li>
+            <!-- search -->
+            <li><img src="img/search.svg" alt="search"></li>
+            <!-- libreria -->
+            <li><img src="img/libreria.svg" alt="libreria"> </li>
+          </ul>
+        </div>
         <!-- fine menu-xs -->
-        </div>
       </div>
-      <!-- fine sidebar -->
-
-      <!-- right -->
-      <div class="ms_content">
-        <div class="ms_top-fixed">
-          <div class="ms_upgrade-flex">
-            <h3>EFFETTUA L'UPGRADE</h3>
-
-          </div>
-        </div>
-        <div class="ms_box"></div>
-        <div class="ms_box"></div>
-        <div class="ms_box"></div>
-        <div class="ms_box"></div>
-        <div class="ms_box"></div>
-        <div class="ms_box"></div>
-        <div class="ms_box"></div>
-
-
-
-      </div>
-    </main>
-
-    <footer>
-      <div class="ms_player-bottom text-center">
-        PLAYER
-
-      </div>
-
-    </footer>
     </div>
-    <!-- fine wrapper -->
+    <!-- fine sidebar -->
+    <!-- inizio content -->
+    <div class="ms_content">
+      <!-- top-fixed -->
+      <div class="ms_top-fixed">
+        <div class="ms_upgrade-flex">
+          <h3>EFFETTUA L'UPGRADE</h3>
+        </div>
+      </div>
+      <!-- end top-fixed -->
+      <div class="pages-flex">
+      </div>
+    </div>
+    <!-- fine content -->
+  </main>
+  <!-- end main -->
 
-
-
-
-
+  <footer>
+    <div class="ms_player-bottom text-center">
+      PLAYER
+    </div>
+  </footer>
+</div>
+<!-- fine wrapper -->
 </body>
 </html>
