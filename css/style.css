@@ -80,6 +80,7 @@ li:not(active){
   overflow: hidden;
 }
 
+
 /* classi generali */
 /* hover */
 span:hover, a:hover{
@@ -176,13 +177,12 @@ span:hover, a:hover{
   background-color: green
 }
 
-/* pages menu */
+/* category menu */
 
 .ms_category {
   width: 100%;
   text-align: center;
 }
-
 .ms_list-category li  {
   display: inline-block;
   margin: 10px;
@@ -210,6 +210,22 @@ span:hover, a:hover{
     width: 25%;
     height:3px;
     background-color: green;
+}
+
+/* album row */
+.ms_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.ms_wrap-item {
+  flex-basis: 15%;
+  border: 1px solid white;
+
+}
+.ms_wrap-item img {
+  width: 100%;
+  height: 100%;
 }
 /* fine content */
 
