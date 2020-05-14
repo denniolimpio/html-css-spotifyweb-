@@ -220,7 +220,6 @@ span:hover, a:hover{
 }
 .ms_wrap-item {
   flex-basis: 15%;
-  border: 1px solid white;
 
 }
 .ms_wrap-item img {
@@ -262,7 +261,44 @@ span:hover, a:hover{
   .ms_logo-xs img {
     width: 35px;
   }
+
+  .ms_wrap {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ms_wrap-item {
+    flex-basis: 50%;
+
+  }
+}
+/* sm devices */
+@media all and (min-width:768px) and (max-width:991px) {
+  .ms_wrap {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ms_wrap-item {
+    flex-basis: 50%;
+
+  }
+
 }
 
+/* md device */
+@media all and (min-width:992px) and (max-width:1199px){
+  .ms_wrap {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ms_wrap-item {
+    flex-basis: 25%;
+
+  }
+
+
+}
 
 /* da cancellare */
