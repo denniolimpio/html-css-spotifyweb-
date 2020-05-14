@@ -213,18 +213,22 @@ span:hover, a:hover{
 }
 
 /* album row */
+.ms_title {
+  padding-left: 10px;
+}
 .ms_wrap {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  text-align: center;
 }
 .ms_wrap-item {
   flex-basis: 15%;
-
 }
 .ms_wrap-item img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  padding: 15px;
 }
 /* fine content */
 
@@ -270,6 +274,7 @@ span:hover, a:hover{
   .ms_wrap-item {
     flex-basis: 50%;
 
+
   }
 }
 /* sm devices */
@@ -295,7 +300,6 @@ span:hover, a:hover{
   }
   .ms_wrap-item {
     flex-basis: 25%;
-
   }
 
 
