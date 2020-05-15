@@ -12,7 +12,7 @@ body{
   color: white;
 }
 main {
-  height: calc( 100vh - 110px);
+  height: calc( 100vh - 90px);
   width: 100%;
 }
 ul {
@@ -59,7 +59,7 @@ p:hover, h1:hover, a:hover {
   height: 100%;
   min-width: 200px;
   background-color: #131923;
-  padding-top: 100px;
+  padding-top: 90px;
   overflow: hidden;
   overflow: auto;
 }
@@ -122,7 +122,7 @@ span:hover, a:hover{
 
 }
 .ms_playlist-container {
-  height: calc(100vh - 410px);
+  height: calc(100vh - 390px);
 }
 .ms_sidebar-item.ms_playlist-container  >h2, i {
   padding-left: 20px;
@@ -176,7 +176,7 @@ span:hover, a:hover{
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  height: 100px;
+  height: 90px;
   padding-right: 20px;
 
 }
@@ -213,20 +213,7 @@ span:hover, a:hover{
 .ms_list-category li a:hover{
 color: #fff;
 }
-.ms_list-category li:hover {
-    position:relative;
-    display:inline-block;
-}
-.ms_list-category li::after{
-    content:'';
-    position:absolute;
-    left:50%;
-    top:100%;
-    margin: 2px auto;
-    width: 25%;
-    height:3px;
-    background-color: green;
-}
+
 
 /* album row */
 
@@ -271,6 +258,7 @@ color: #fff;
 .ms_card:hover .ms_cover .ms_overlay .play{
   display: block;
 }
+
 .ms_card .ms_description h4{
   font-size: 15px;
   font-weight: bold;
@@ -280,10 +268,31 @@ color: #fff;
 
 /*end  main */
 /* footer */
-.ms_player-bottom {
-  min-height: 110px;
+.ms_player{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90px;
   background-color: #292929;
   }
+
+.ms_left {
+  display: flex;
+  flex-flow: row wrap;
+}
+  .ms_box {
+    flex-basis: 15%;
+
+  }
+  .ms_box.ms_center{
+    flex-grow: 1;
+  }
+
+  .ms_player-cover {
+    padding-left: 20px;
+  }
+
 /* end footer */
 
 
@@ -291,18 +300,18 @@ color: #fff;
 /* formato xs */
 @media all and (max-width:767px) {
   .ms_sidebar {
-    width: 100px;
+    width: 70px;
     height: 100%;
   }
     /* layout */
   .ms_content, .ms_top-fixed {
-    width: calc(100% - 100px);
+    width: calc(100% - 70px);
   }
   .ms_menu-xs {
     width: 50px;
   }
   .ms_top-fixed {
-    height: 100px;
+    height: 90px;
   }
   /* siderbar */
 .ms_logo-xs {
