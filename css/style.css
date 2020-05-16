@@ -243,6 +243,7 @@ color: #fff;
 
 .ms_card:hover .ms_cover img {
   opacity: .3;
+  transition: all 1s ease
 
 }
 
@@ -267,32 +268,74 @@ color: #fff;
 /* fine content */
 
 /*end  main */
+
 /* footer */
+/* player */
 .ms_player{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-flow: row nowrap;
   height: 90px;
   background-color: #292929;
   }
-
-.ms_left {
-  display: flex;
-  flex-flow: row wrap;
+.ms_player, .ms_box {
+  align-items: center;
 }
-  .ms_box {
-    flex-basis: 15%;
+.ms_player .ms_box {
+  display: flex;
+  padding-left: 20px;
+}
 
-  }
-  .ms_box.ms_center{
-    flex-grow: 1;
-  }
+.ms_name-song h4 , h5{
+  padding: 2px;
+  margin: 0;
+}
+.ms_name-song h4 {
+  font-size: 13px
+}
+.ms_name-song h5 {
+  font-size: 12px;
 
-  .ms_player-cover {
-    padding-left: 20px;
-  }
+}
+.ms_name-song h5:hover {
+  text-decoration: underline;
+  color: #fff;
+  cursor: pointer;
+}
+.ms_player .ms_box.ms_left .ms_album img {
+  max-width: 50px;
+  min-width: 30px;
+}
+.ms_player .ms_box.ms_left  .ms_name-song {
+  margin:0 35px 0 10px
+}
 
+.ms_favourite i{
+  padding: 0 3px;
+}
+
+/* center */
+.ms_player .ms_box.ms_center {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+
+}
+.ms_player-button .ms_circle {
+  font-size: 27px;
+  vertical-align: middle;
+}
+
+.ms_player-button .ms_circle:hover {
+  transform: scale(1.1);
+}
+
+.ms_riproduction-bar {
+  height: 1px;
+  color: red;
+  width: 100%;
+  background-color: green;
+}
 /* end footer */
 
 
@@ -342,10 +385,13 @@ color: #fff;
 
   }
 
-}
+.ms_player .ms_box {
 
+}
+}
 /* md device */
 @media all and (min-width:992px) and (max-width:1199px){
+
   .ms_wrap {
     flex-wrap: wrap;
     align-items: flex-start;
@@ -353,8 +399,6 @@ color: #fff;
   .ms_card {
     width: calc(100% / 4);
   }
-
-
 }
 
 /* da cancellare */
