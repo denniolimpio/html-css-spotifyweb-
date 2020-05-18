@@ -399,16 +399,7 @@ color: #fff;
     flex-basis: 50%;
   }
 
-  .ms_player  {
-    display: flex;
-    padding-left: 0px;
-  }
-  .ms_sidebar-item.ms_playlist-container >h2, i {
-    padding-left: 8px;
-  }
-  .ms_player .ms_box.ms_left .ms_name-song {
-    margin: 0 2px 0 10px;
-  }
+
 
 
 }
@@ -420,12 +411,8 @@ color: #fff;
   }
   .ms_card {
     width: calc(100% / 2);
-
   }
 
-.ms_player .ms_box {
-
-}
 }
 /* md device */
 @media all and (min-width:992px) and (max-width:1199px){
