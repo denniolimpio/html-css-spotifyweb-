@@ -338,8 +338,7 @@ color: #fff;
   border-radius: 15px;
 }
 
-.ms_bar:hover .ms_current-progress:after {
-}
+
 .ms_bar .ms_current-progress {
   position: absolute;
   width: 20%;
@@ -350,6 +349,17 @@ color: #fff;
   background-color: green;
 }
 
+.ms_circle {
+  display: none;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  font-size: 9px;
+}
+
+.ms_progress-bar:hover .ms_bar .ms_current-progress .ms_circle {
+  display: block;
+}
 /* ms_left */
 
 .ms_volume-control {
