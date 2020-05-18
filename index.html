@@ -298,48 +298,69 @@
     <!-- fine contenitore destro -->
   </main>
   <!-- end main -->
+
+
+
   <footer>
-    <div class="ms_player">
+    <div class="ms_footer">
       <!-- left box-->
-      <div class="ms_box ms_left">
-        <div class="ms_album">
+
+      <div class="ms_box ms_song">
+        <div class="ms_cover-image">
           <img src="img/sinister.jpeg" alt="sinister">
         </div>
-        <div class="ms_name-song">
+        <div class="ms_current-song-title">
           <h4>Sinister</h4>
-          <h5>brano nome</h5>
+          <h5>Brano nome</h5>
         </div>
         <div class="ms_favourite">
-          <i class="far fa-folder"></i>
           <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
         </div>
+
+
 
 
       </div>
-      <!-- center box -->
-      <div class="ms_box ms_center">
-        <!-- barra dei comandi -->
-        <div class="ms_player-button">
-          <i class="fas fa-random"></i>
+      <!-- central box-->
+
+      <div class="ms_box ms_player">
+
+        <div class="ms_player-control">
           <i class="fas fa-step-backward"></i>
-          <i class="far fa-play-circle ms_circle"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle ms_play"></i>
           <i class="fas fa-step-forward"></i>
           <i class="fas fa-undo-alt"></i>
         </div>
-        <!-- barra di riprodizione -->
 
-        <div class="ms_bar">
-          <span>0.35</span>
-          <span>4.25</span>
+        <div class="ms_progress-bar">
+          <span>0:25</span>
+          <div class="ms_bar">
+            <span class="ms_current-progress">
+            </span>
+          </div>
+          <span>4:35</span>
         </div>
+
+
       </div>
 
       <!-- right box -->
-      <div class="ms_box ms_right">
-        <i class="fas fa-list"></i>
-        <i class="fas fa-desktop"></i>
-        <i class="fas fa-volume-up"></i>
+      <div class="ms_box ms_volume-control">
+        <div class="ms_progress-bar">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+          <div class="ms_bar">
+            <span class="ms_current-progress">
+            </span>
+          </div>
+        </div>
+
+
       </div>
+
     </div>
     <!-- end player -->
   </footer>

@@ -271,73 +271,90 @@ color: #fff;
 
 /* footer */
 /* player */
-.ms_player{
+.ms_footer{
   display: flex;
+  align-items: center;
   flex-flow: row nowrap;
   height: 90px;
   background-color: #292929;
   }
-.ms_player, .ms_box {
+
+.ms_footer .ms_box {
   align-items: center;
 }
-.ms_player .ms_box {
+
+/* left */
+.ms_song {
   display: flex;
+  flex-direction: row;
+  flex-basis: 300px;
   padding-left: 20px;
 }
+.ms_song .ms_cover-image  {
+  width: 60px;
+  min-width: 50px;
 
-.ms_name-song h4 , h5{
-  padding: 2px;
-  margin: 0;
-}
-.ms_name-song h4 {
-  font-size: 13px
-}
-.ms_name-song h5 {
-  font-size: 12px;
 
 }
-.ms_name-song h5:hover {
-  text-decoration: underline;
-  color: #fff;
-  cursor: pointer;
+.ms_song .ms_cover-image img{
+  width: 100%;
 }
-.ms_player .ms_box.ms_left .ms_album img {
-  max-width: 50px;
-  min-width: 30px;
+.ms_song .ms_current-song-title {
+  padding: 0 10px;
 }
-.ms_player .ms_box.ms_left  .ms_name-song {
-  margin:0 35px 0 10px
+.ms_song .ms_current-song-title h4 {
+  font-size: 14px;
+  margin-bottom: 0;
 }
-
-.ms_favourite i{
-  padding: 0 3px;
-}
-
-/* center */
-.ms_player .ms_box.ms_center {
+/* central */
+.ms_player {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  text-align: center;
-
+  flex-basis: 80%;
+  align-items: center;
 }
-.ms_player-button .ms_circle {
-  font-size: 27px;
+.ms_player .ms_play {
+  font-size: 30px;
   vertical-align: middle;
 }
+.ms_player .ms_play:hover {
+  transform: scale(1.2);
 
-.ms_player-button .ms_circle:hover {
-  transform: scale(1.1);
+}
+.ms_progress-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.ms_progress-bar span {
+  padding: 0 10px;
+}
+.ms_progress-bar .ms_bar {
+  position: relative;
+  width: 50%;
+  height: 4px;
+  background-color: grey;
+  border-radius: 15px;
 }
 
-.ms_riproduction-bar {
-  height: 1px;
-  color: red;
-  width: 100%;
+.ms_bar:hover .ms_current-progress:after {
+}
+.ms_bar .ms_current-progress {
+  position: absolute;
+  width: 20%;
+  background-color: lightgrey;
+  height: 100%;
+}
+.ms_progress-bar:hover .ms_bar .ms_current-progress {
   background-color: green;
 }
-/* end footer */
 
+/* ms_left */
+
+.ms_volume-control {
+  flex-basis: 300px;
+}
 
 /* media query */
 /* formato xs */
@@ -370,9 +387,20 @@ color: #fff;
   }
   .ms_card {
     flex-basis: 50%;
-
-
   }
+
+  .ms_player  {
+    display: flex;
+    padding-left: 0px;
+  }
+  .ms_sidebar-item.ms_playlist-container >h2, i {
+    padding-left: 8px;
+  }
+  .ms_player .ms_box.ms_left .ms_name-song {
+    margin: 0 2px 0 10px;
+  }
+
+
 }
 /* sm devices */
 @media all and (min-width:768px) and (max-width:991px) {
